@@ -27,6 +27,8 @@ namespace WeatherClientTool_Framework
                 GetWeatherDetails(cityName);
                 choice = GetChoice();
             }
+            _logger.Info("App console is closing as user search completed");
+            _logger.Info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
         }
 
         public static void Initialize()
@@ -159,8 +161,7 @@ namespace WeatherClientTool_Framework
                 }
                 
        
-            _logger.Info("App console is closing as user search completed");
-            _logger.Info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            
             return city.Status;
         }
     }
